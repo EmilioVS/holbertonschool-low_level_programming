@@ -1,17 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 /**
-* main - Entry point
+* print_must_numbers - Prints the number 0 to 9
 *
-* Return: Always 0 (Success)
+* Return: The numbers0 to 9
 */
-int main(void)
+void print_most_numbers(void)
 {
-char num;
-for (num = '0'; num <= '9'; num++)
+int x = 0;
+for (; x <= 9; x++)
 {
-if (num != '2' && num != '4')
-putchar(num);
+if (x == 2 || x == 4)
+{
+continue;
 }
-putchar ('\n');
-return (0);
+else
+{
+_putchar(x + '0');
+}
+}
+_putchar('\n');
 }
