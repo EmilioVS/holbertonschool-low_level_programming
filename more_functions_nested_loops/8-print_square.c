@@ -4,7 +4,7 @@
 *@size: The number of squares
 *Return: empty
 */
-int print_square(int size)
+void print_square(int size)
 {
 int x, y;
 if (size <= 0)
