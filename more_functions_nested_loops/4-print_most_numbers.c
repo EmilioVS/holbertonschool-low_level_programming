@@ -6,11 +6,11 @@
 */
 int main(void)
 {
-char abc;
-for (abc = 'a'; abc <= 'z'; abc++)
+char num;
+for (num = '0'; num <= '9'; num++)
 {
-if (abc != 'q' && abc != 'e')
-putchar(abc);
+if (num != '2' && num != '4')
+putchar(num);
 }
 putchar ('\n');
 return (0);
