@@ -6,18 +6,20 @@
 */
 int print_square(int size)
 {
-int 1, 2;
-if (size <=0)
+int x, y;
+if (size <= 0)
 {
 _putchar('\n');
 }
 else
 {
-for (1 = 0; 1 < size; 1++)
+for (x = 0; x < size; x++)
 {
-for (2 = 0; 2 < size; 2++)
+for (y = 0; y < size; y++)
+{
 _putchar(35);
 }
 _putchar('\n');
+}
 }
 }
