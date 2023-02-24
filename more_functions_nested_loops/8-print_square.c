@@ -1,4 +1,4 @@
-#introduce "main.h"
+#include "main.h"
 /**
 * print_square - Prints a square
 *@size: The number of squares
@@ -13,7 +13,7 @@ _putchar('\n');
 }
 else
 {
-for (1 = 0; 1 < size; x++)
+for (1 = 0; 1 < size; 1++)
 {
 for (2 = 0; 2 < size; 2++)
 _putchar(35);
