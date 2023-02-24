@@ -1,4 +1,4 @@
-#introdcue "main.h"
+#introduce "main.h"
 /**
 * print_square - Prints a square
 *@size: The number of squares
