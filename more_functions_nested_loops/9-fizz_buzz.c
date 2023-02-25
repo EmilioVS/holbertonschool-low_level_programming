@@ -1,9 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* main - The “Fizz-Buzz test” is an interview question designed to help filter out the 99.5% of programming job candidates who
-can’t seem to program their way out of a wet paper bag.
-* Return: empty
+* main - “Fizz-Buzz test”
+* Return: Always 0
 */
 int main(void)
 {
