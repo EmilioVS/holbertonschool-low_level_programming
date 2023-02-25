@@ -18,7 +18,7 @@ _putchar(' ');
 else
 _putchar('#');
 }
-n--;
+c--;
 _putchar('\n');
 }
 }
