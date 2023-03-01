@@ -7,7 +7,7 @@
 int _strlen(char *s)
 {
   int longitud = 0;
-  for (*s != '\0');
+  while (*s != '\0')
     {
       longitud++;
     }
