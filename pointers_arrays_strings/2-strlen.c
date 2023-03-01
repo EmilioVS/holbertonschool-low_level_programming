@@ -6,9 +6,8 @@
 */
 int _strlen(char *s)
 {
-int longitud = 0;
-while (*s != '\0')
-longitud++;
-s++;
-return (longitud);
+int length = 0;
+while(s[len] != '\0')
+len++;
+return (length);
 }
