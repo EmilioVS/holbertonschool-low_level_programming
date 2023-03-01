@@ -7,9 +7,9 @@
 int _strlen(char *s)
 {
   int longitud = 0;
-  for (*s != '\0')
+  for (*s != '\0');
     {
-      longi++;
+      longitud++;
     }
   return (longitud);
 }
