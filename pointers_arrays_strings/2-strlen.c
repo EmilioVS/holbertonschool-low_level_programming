@@ -6,10 +6,11 @@
 */
 int _strlen(char *s)
 {
-  int longitud = 0;
-  while (*s != '\0')
-    {
-      longitud++;
-    }
-  return (longitud);
+int longitud = 0;
+while (*s != '\0')
+{
+longitud++;
+*s++
+}
+return (longitud);
 }
