@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-* main - check the code
+* main - prints a string in reverse
 *
-* Return: Always 0.
+* Return: nothing
 */
-void print_rev(char *s);
+void print_rev(char *s)
 {
 int len= 0;
 while (s[len] != '\0')
