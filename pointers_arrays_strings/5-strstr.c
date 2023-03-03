@@ -16,7 +16,7 @@ char *two = needle;
 while (*one == *two && *two != '\0')
 {
 one++;
-twoo++;
+two++;
 }
 if (*two == '\0')
 return (haystack);
