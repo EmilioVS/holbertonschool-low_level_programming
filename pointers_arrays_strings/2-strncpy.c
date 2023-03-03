@@ -13,7 +13,7 @@ j = 0;
 while (j < n && src[j] != '\0')
 {
 dest[j] = src [j];
-j++
+j++;
 }
 while (j < n)
 {
