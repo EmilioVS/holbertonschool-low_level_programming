@@ -18,6 +18,11 @@ i++;
 }
 return (s);
 }
+/**
+* check_seperators - Separators of words
+* @c: an input character
+* Return: 1 if seperator, 0 otherwise
+*/
 int check_seperators(char c)
 {
 int i = 0;
