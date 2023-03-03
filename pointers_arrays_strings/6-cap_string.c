@@ -1,18 +1,32 @@
 #include "main.h"
+int check_seperators(char c);
 /**
-* string_toupper - changes all lowercase letters of a  string
-* to upper case
-* @s: an input string
-* Return: char pointer to converted string
+* cap_string - a function that capitalizes all words of a string.
+* @s: An input string to capitalize letters
+* Return: pointer to s
 */
-char *cap_string(char *)
+char *cap_string(char *s)
 {
-char *start = s;
-while (*s)
+int i = 0;
+while (s[i])
 {
-if (*s >= 'a' && *s <= 'z')
-*s -= 32;
-s++;
+if (i == 0 && (s[i] >= 'a' && s[i] <= 'z'))
+s[i] -= 32;
+if (check_seperators(s[i]) && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
+s[i + 1] -= 32;
+i++;
 }
-return (start);
+return (s);
+}
+int check_seperators(char c)
+{
+int i = 0;
+char seperators[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?',
+'"', '(', ')', '{', '}' };
+for (; i < 13; i++)
+{
+if (c == seperators[i])
+return (1);
+}
+return (0);
 }
