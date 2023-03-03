@@ -8,20 +8,17 @@
 * or NULL if the substring is not found.
 */
 char *_strstr(char *haystack, char *needle)
+for (; *haystack != '\0'; haystack++)
 {
-char *startn = needle, *starth = haystack;
-while (*haystack)
+char *one = haystack;
+char *two = needle;
+while (*one == *two && *two != '\0')
 {
-starth = haystack;
-needle = startn;
-while (*haystack == *needle)
-{
-haystack++;
-needle++;
+one++;
+twoo++;
 }
-if (*needle == '\0')
+if (*two == '\0')
 return (haystack);
-haystack = starth + 1;
 }
 return (NULL);
 }
