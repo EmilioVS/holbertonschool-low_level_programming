@@ -1,5 +1,4 @@
-#include "holberton.h"
-
+#include "main.h"
 #include <stdlib.h>
 /**
 * string_nconcat - function that concatenates two strings
