@@ -40,7 +40,7 @@ printf("%s", temp);
 break;
 }
 printf("(nil)");
-break;	  
+break;
 }
 if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
 format[i] == 's') && format[(i + 1)] != '\0')
