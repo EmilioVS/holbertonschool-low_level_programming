@@ -14,3 +14,4 @@ return (-1);
 set = ~(1 << index);
 *n = *n & set;
 return (1);
+}
