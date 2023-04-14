@@ -36,7 +36,7 @@ exit(99);
 }
 while (_EOF)
 {
-_EOF = read(from_fd, buffer, 1024);      
+_EOF = read(from_fd, buffer, 1024);
 if (_EOF < 0)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
