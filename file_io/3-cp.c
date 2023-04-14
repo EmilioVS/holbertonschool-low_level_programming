@@ -1,4 +1,19 @@
-#include "main.h"
+#include <sys/types.h>
+
+#include <sys/stat.h>
+
+#include <sys/uio.h>
+
+#include <unistd.h>
+
+#include <fcntl.h>
+
+#include <stdio.h>
+
+#include <stdlib.h>
+
+
+
 int safe_close(int);
 
 /**
@@ -148,8 +163,15 @@ int safe_close(int description)
 {
   
   int error;
-error = close(description);
-if (error < 0)
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", description);
-return (error);
+  
+
+  
+  error = close(description);
+  
+  if (error < 0)
+    
+    dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", description);
+  
+  return (error);
+  
 }
