@@ -28,7 +28,7 @@ while (node)
 printf("'%s': '%s'", node->key, node->value);
 node = node->next;
 if (i < last_pos - 1)
-printf(", ");	      
+printf(", ");
 }
 }
 }
